@@ -19,13 +19,5 @@
       "packageNameTemplate": "{{depName}}",
       "versioningTemplate": "helm"
     }
-  ],
-  "packageRules": [
-    {
-      "matchDepNames": [
-        "openstack-helm/**"
-      ],
-      "groupName": "openstack-helm"
-    }
   ]
 }
