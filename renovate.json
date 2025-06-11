@@ -11,7 +11,7 @@
         "/apps.*\\.ya?ml$/"
       ],
       "matchStrings": [
-        "component:\\s['\"]?(?<depName>[\\w\\-]+)['\"]?\\s*(repoURL:\\s['\"]?(?<repoUrl>[\\w:\/\\-\\.]+)['\"]?\\s*)?chartVersion:\\s['\"]?(?<currentValue>[\\w\\.]+)['\"]?"
+        "component:\\s['\"]?(?<depName>[\\w\\-]+)['\"]?\\s*(repoURL:\\s['\"]?(?<repoUrl>[\\w:\/\\-\\.]+)['\"]?\\s*)?chartVersion:\\s['\"]?(?<currentValue>[\\w\\.\\-\\+]+)['\"]?"
       ],
       "datasourceTemplate": "helm",
       "registryUrlTemplate": "{{#if repoUrl }}{{repoUrl}}{{else}}https://tarballs.opendev.org/openstack/openstack-helm{{/if}}",
