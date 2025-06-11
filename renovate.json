@@ -15,13 +15,14 @@
       ],
       "datasourceTemplate": "helm",
       "registryUrlTemplate": "{{#if repoUrl }}{{repoUrl}}{{else}}https://tarballs.opendev.org/openstack/openstack-helm{{/if}}",
-      "packageNameTemplate": "openstack-helm/{{depName}}",
+      "depNameTemplate": "openstack-helm/{{depName}}",
+      "packageNameTemplate": "{{depName}}",
       "versioningTemplate": "helm"
     }
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "openstack-helm/**"
       ],
       "groupName": "openstack-helm"
